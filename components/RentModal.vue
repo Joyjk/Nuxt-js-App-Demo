@@ -14,7 +14,10 @@
           </p>
           <vc-date-picker :value="null" color="indigo" is-dark is-range />
         </div>
-        <b-button id="show-btn">Order</b-button>
+        <b-button id="show-btn" @click="()=>{
+            addItem(product.id)
+            hideModal()
+          }">Order</b-button>
       </div>
       <!-- <b-button class="mt-3" variant="outline-danger" block @click="hideModal"
         >Close Me</b-button
@@ -31,7 +34,9 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
+  props:['product'],
   methods: {
     showModal() {
       this.$refs["my-modal"].show();
@@ -44,6 +49,7 @@ export default {
       // when the modal has hidden
       this.$refs["my-modal"].toggle("#toggle-btn");
     },
+    ...mapMutations(['addItem'])
   },
 };
 </script>

@@ -2,7 +2,7 @@
   <div>
     <div>
       <b-navbar toggleable="lg" type="dark" variant="info">
-        <Nuxt-link class="navbar-brand" to="/">NavBar</Nuxt-link>
+        <Nuxt-link class="navbar-brand" to="/">Easy shop</Nuxt-link>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -16,7 +16,7 @@
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav>
               <Nuxt-link to="/products" class="nav-link">Products</Nuxt-link>
-              <Nuxt-link to="/" class="nav-link">Disabled</Nuxt-link>
+              <Nuxt-link to="/myitem" class="nav-link">My Item</Nuxt-link>
             </b-navbar-nav>
             <!-- <b-nav-form>
               <b-form-input

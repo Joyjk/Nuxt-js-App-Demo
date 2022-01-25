@@ -4,8 +4,11 @@
     <div class="container">
       <!-- <Tutorial v-for="a in 5" key="logo"/> -->
 
-      <Hero />
-
+      <Hero  />
+        <!-- <br><br><br>
+        <br><br><br> -->
+     
+        
       <LargeCardDisplay
         v-for="cardInfo in largeCardInfo"
         :key="cardInfo.id"
